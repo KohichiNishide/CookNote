@@ -10,6 +10,7 @@
     @render()
 
   render: ->
+    console.log("indexItemView is rendered")
     @$el.html @tmpl(@model.toJSON())
     this
 
