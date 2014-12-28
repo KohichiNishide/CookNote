@@ -12,6 +12,12 @@
   indexNotes: ->
     console.log("indexNotes")
     indexView = new SimpleNote.Views.IndexView(collection: @notes)
+    @notes.fetch
+      reset: true
+      success: (model, res) ->
+        console.log("fetch() is success")  
+      error: (model, res) ->
+        console.log("fetch() is error")  
 
   newNote: ->
     console.log("newNote")

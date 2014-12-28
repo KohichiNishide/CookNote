@@ -5,7 +5,7 @@
     body:''
 
   initialize: ->
-    console.log("initialize")
+    console.log("note is initialized")
  
 @SimpleNote.Collections.NoteCollection = Backbone.Collection.extend
   model: SimpleNote.Models.Note

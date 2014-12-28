@@ -6,17 +6,10 @@
   initialize: ->
     console.log("IndexView is initialized!")
     _.bindAll(this)
-    @collection.fetch
-      success: (model, res) ->
-        console.log("fetch() is success")  
-      error: (model, res) ->
-        console.log("fetch() is error")  
+    @listenTo @collection, 'reset', @render
 
   render: ->
-    @collection.each ((item) ->
-      @addItemView item
-      return
-    ), this
+    console.log("index_view is rendered")
     this
 
   addItemView: (note) ->
