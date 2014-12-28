@@ -2,7 +2,7 @@
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+// or vendor/assets/javascripts of plugins, if any, canfbe referenced here using a relative path.
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require underscore
+//= require lodash
+//= require backbone
+//= require backbone.stickit/backbone.stickit
+//= require handlebars.runtime
+//= require highlightjs
+//= require notifyjs/notify-combined
+//= require simple_note
 //= require_tree .
