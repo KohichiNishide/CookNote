@@ -1,4 +1,3 @@
-#= require_tree ../templates
 @SimpleNote.Views.IndexView = Backbone.View.extend
   tagName: 'ul'
   events:
@@ -17,7 +16,7 @@
       console.log(note.get("raw_body"))
       console.log(note.get("body"))
     ), this
-    @$("#main").html(@el)
+    $("#main").html(@el)
     this
 
   addItemView: (note) ->

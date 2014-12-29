@@ -18,6 +18,6 @@
 //= require backbone.stickit/backbone.stickit
 //= require handlebars.runtime
 //= require highlightjs
-//= require notifyjs/notify-combined
+//= require_tree ../templates
 //= require simple_note
 //= require_tree .
